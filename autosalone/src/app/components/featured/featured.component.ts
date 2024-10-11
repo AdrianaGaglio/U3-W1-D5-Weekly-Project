@@ -7,7 +7,7 @@ import { iCar } from '../../models/icar';
   styleUrl: './featured.component.scss',
 })
 export class FeaturedComponent implements OnInit {
-  featuredCars: iCar[] = [];
+  cars: iCar[] = [];
   desc = function (array: iCar[]) {
     return array.sort(function (a: iCar, b: iCar) {
       return b.price - a.price;
@@ -26,9 +26,9 @@ export class FeaturedComponent implements OnInit {
       .then((dati) => {
         this.desc(dati);
         for (let i = 0; i < 3; i++) {
-          this.featuredCars.push(dati[i]);
+          this.cars.push(dati[i]);
         }
-        console.log(this.featuredCars);
+        console.log(this.cars);
       })
       .catch((err) => console.log(err));
   }
