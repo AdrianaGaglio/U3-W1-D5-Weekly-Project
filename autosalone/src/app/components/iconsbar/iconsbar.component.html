@@ -1,0 +1,14 @@
+<!-- <h3 class="text-center text-new-black">I nostri brand</h3> -->
+<div class="row g-1">
+  <div
+    *ngFor="let brand of brands"
+    class="col text-center d-flex align-items-center justify-content-center"
+  >
+    <img
+      src="images/{{ brand.brandLogo }}"
+      class="icon w-fixed-100"
+      alt="{{ brand.brandName }}"
+      [routerLink]="['/brand', brand.brandName.toLowerCase()]"
+    />
+  </div>
+</div>

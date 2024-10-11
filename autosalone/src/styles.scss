@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+$new-primary: #5351e5;
+$new-black: #030311;
+$new-success: #3faf79;
+$new-light: #fbfbfb;
+$new-danger: #e57373;
+$new-gray: #3a3e45;
+$new-light-purple: #bfbfe3;
+
+$new-theme-colors: (
+  primary: $new-primary,
+  secondary: $new-light-purple,
+  "new-black": $new-black,
+  success: $new-success,
+  light: $new-light,
+  danger: $new-danger,
+  "gray": $new-gray,
+);
+
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+
+// sizes
+$custom-widths: (
+  30: 30px,
+  50: 50px,
+  100: 100px,
+  150: 150px,
+  200: 200px,
+  250: 250px,
+);
+
+@each $value, $size in $custom-widths {
+  .w-fixed-#{$value} {
+    width: $size;
+  }
+}
+
+$custom-heights: (
+  30: 30px,
+  50: 50px,
+  100: 100px,
+  150: 150px,
+  200: 200px,
+  250: 250px,
+);
+
+@each $value, $size in $custom-heights {
+  .h-fixed-#{$value} {
+    height: $size;
+  }
+}
+
+.fs-7 {
+  font-size: 0.8rem;
+}
+
+* {
+  font-family: "Onest", sans-serif;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// header
+.app-header {
+  @extend .container-fluid;
+  @extend .p-3;
+}
+
+// footer
+.app-footer {
+  @extend .container-fluid;
+  @extend .p-3;
+}
+
+// hero
+.app-hero {
+  @extend .container-fluid;
+  @extend .p-3;
+}
+
+// icons {
+.app-iconsbar {
+  @extend .container-fluid;
+  @extend .p-3;
+}
+
+// featured cars
+.app-featured {
+  @extend .container;
+  @extend .p-5;
+}
+
+.not-available {
+  border: 2px solid $new-danger;
+
+  .card-header {
+    @extend .bg-danger;
+  }
+  .badge {
+    @extend .bg-danger;
+  }
+}
+
+.available {
+  border: 2px solid $new-success;
+
+  .card-header {
+    @extend .bg-success;
+  }
+  .badge {
+    @extend .bg-success;
+  }
+}

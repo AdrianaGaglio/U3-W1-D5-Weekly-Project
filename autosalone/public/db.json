@@ -1,0 +1,101 @@
+[
+    {
+        "brand": "Mini",
+        "brandLogo": "mini.png",
+        "model": "Cooper",
+        "modelImage": "mini-cooper.jpeg",
+        "year": 2018,
+        "price": 14500,
+        "available": true
+    },
+    {
+        "brand": "Mini",
+        "brandLogo": "mini.png",
+        "model": "Countryman",
+        "modelImage": "mini-countryman.webp",
+        "year": 2021,
+        "price": 26500,
+        "available": false
+    },
+    {
+        "brand": "Audi",
+        "brandLogo": "audi.png",
+        "model": "A4",
+        "modelImage": "audi-a4.webp",
+        "year": 2015,
+        "price": 15200,
+        "available": true
+    },
+    {
+        "brand": "BMW",
+        "brandLogo": "bmw.png",
+        "model": "X3",
+        "modelImage": "bmw-x3.jpeg",
+        "year": 2019,
+        "price": 35500,
+        "available": true
+    },
+    {
+        "brand": "Mercedes",
+        "brandLogo": "mercedes.png",
+        "model": "C-Class",
+        "modelImage": "mercedes-c-class.webp",
+        "year": 2020,
+        "price": 38700,
+        "available": false
+    },
+    {
+        "brand": "Volvo",
+        "brandLogo": "volvo.png",
+        "model": "XC60",
+        "modelImage": "volvo-xc60.webp",
+        "year": 2017,
+        "price": 27500,
+        "available": true
+    },
+    {
+        "brand": "Suzuki",
+        "brandLogo": "suzuki.png",
+        "model": "Swift",
+        "modelImage": "suzuki-swift.jpeg",
+        "year": 2016,
+        "price": 8200,
+        "available": false
+    },
+    {
+        "brand": "Lancia",
+        "brandLogo": "lancia.png",
+        "model": "Ypsilon",
+        "modelImage": "lancia-y.webp",
+        "year": 2015,
+        "price": 7500,
+        "available": true
+    },
+    {
+        "brand": "Renault",
+        "brandLogo": "renault.png",
+        "model": "Clio",
+        "modelImage": "renault-clio.avif",
+        "year": 2013,
+        "price": 5900,
+        "available": true
+    },
+    {
+        "brand": "Fiat",
+        "brandLogo": "fiat.png",
+        "model": "Panda",
+        "modelImage": "fiat-panda.webp",
+        "year": 2012,
+        "price": 4800,
+        "available": false
+    },
+    {
+        "brand": "Dacia",
+        "brandLogo": "dacia.png",
+        "model": "Duster",
+        "modelImage": "dacia-duster.webp",
+        "year": 2019,
+        "price": 13200,
+        "available": true
+    }
+]
