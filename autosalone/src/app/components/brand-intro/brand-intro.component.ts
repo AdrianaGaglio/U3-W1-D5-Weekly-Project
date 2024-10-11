@@ -17,9 +17,7 @@ export class BrandIntroComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.subscribe((params) => {
-      this.brand =
-        params['brand'].slice(0, 1).toUpperCase() +
-        params['brand'].slice(1).toLowerCase();
+      this.brand = params['brand'].toUpperCase();
       fetch('db.json')
         .then((response) => {
           if (response.ok) {
@@ -29,7 +27,9 @@ export class BrandIntroComponent implements OnInit {
           }
         })
         .then((dati: iCar[]) => {
-          this.cars = dati.filter((car: iCar) => car.brand === this.brand);
+          this.cars = dati.filter(
+            (car: iCar) => car.brand.toLowerCase() === this.brand.toLowerCase()
+          );
           this.brandLogo = this.cars[0].brandLogo;
         })
         .catch((err) => console.log(err));

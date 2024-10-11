@@ -1,1 +1,36 @@
-
+<div class="row row-cols-5 p-3 g-3">
+  <div *ngFor="let car of cars" class="col text-center">
+    <div class="card shadow-sm px-1 py-3">
+      <div class="card-header border-0">
+        <h5 class="card-title mb-0">{{ car.brand }} {{ car.model }}</h5>
+      </div>
+      <img
+        src="images/{{ car.modelImage }}"
+        class="w-100 h-fixed-250 object-fit-cover mx-auto my-3"
+        alt=""
+      />
+      <div class="card-body p-0">
+        <ul class="nav mb-3 justify-content-center">
+          <li class="badge bg-secondary mx-1">Anno {{ car.year }}</li>
+          <li class="badge bg-secondary mx-1">
+            Prezzo {{ car.price | currency : "EUR" }}
+          </li>
+          <li
+            class="badge bg-secondary mx-1"
+            [ngClass]="{
+              'bg-success': car.available,
+              'bg-danger': !car.available
+            }"
+            [innerHTML]="car.available ? 'Pronta consegna' : 'Non disponibile'"
+          ></li>
+        </ul>
+        <button
+          [routerLink]="['/brand', car.brand.toLowerCase()]"
+          class="btn btn-primary"
+        >
+          Vedi tutte le nostre {{ car.brand }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

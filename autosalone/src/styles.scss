@@ -78,7 +78,8 @@ $custom-heights: (
 }
 
 // hero
-.app-hero {
+.app-hero,
+.app-brand-intro {
   @extend .container-fluid;
   @extend .p-3;
 }

@@ -1,7 +1,10 @@
 <h3 class="text-center text-new-black mb-3">Le nostre auto di punta</h3>
 <div class="row p-3 g-3">
   <div *ngFor="let car of featuredCars" class="col text-center">
-    <div class="card shadow-sm p-3">
+    <div
+      [ngClass]="{ available: car.available, 'not-available': !car.available }"
+      class="card shadow-sm p-3"
+    >
       <div class="card-header border-0">
         <h5 class="card-title mb-0">{{ car.brand }} {{ car.model }}</h5>
       </div>
@@ -22,8 +25,8 @@
           ></li>
         </ul>
         <button
-          [routerLink]="['/brand', car.brand.toLowerCase()]"
           class="btn btn-primary"
+          [routerLink]="['/brand', car.brand.toLowerCase()]"
         >
           Vedi tutte le nostre {{ car.brand }}
         </button>
