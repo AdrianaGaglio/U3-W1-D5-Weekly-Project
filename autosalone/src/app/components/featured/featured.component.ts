@@ -28,7 +28,6 @@ export class FeaturedComponent implements OnInit {
         for (let i = 0; i < 3; i++) {
           this.cars.push(dati[i]);
         }
-        console.log(this.cars);
       })
       .catch((err) => console.log(err));
   }

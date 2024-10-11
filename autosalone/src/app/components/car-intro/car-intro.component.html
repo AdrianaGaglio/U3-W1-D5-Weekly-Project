@@ -1,0 +1,40 @@
+<div class="container">
+  <div *ngIf="car" class="d-flex py-5">
+    <div class="col p-3">
+      <img
+        src="images/{{ car.modelImage }}"
+        class="w-100 h-100 mb-3 rounded-4"
+        alt="logo"
+      />
+    </div>
+    <div class="col p-3 text-center">
+      <div
+        class="d-flex flex-column justify-content-evenly rounded-4 bg-secondary p-3 h-100 bg-opacity-50"
+      >
+        <h3>{{ car.brand }} {{ car.model }}</h3>
+        <p class="fw-bold display-6 text-primary">
+          {{ car.price | currency : "EUR" }}
+        </p>
+        <p>Anno: {{ car.year }}</p>
+        <p
+          class="align-self-center py-1 px-2 rounded-3 text-light"
+          [ngClass]="{
+            'bg-success': car.available,
+            'bg-danger': !car.available
+          }"
+        >
+          {{ car.available ? "Pronta consegna" : "Non disponibile" }}
+        </p>
+        <button class="btn btn-primary align-self-center">
+          Chiedi una consulenza per l'acquisto
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section
+  section
+  class="app-related-cars container-fluid p-3"
+  [carBrand]="carBrand"
+></section>

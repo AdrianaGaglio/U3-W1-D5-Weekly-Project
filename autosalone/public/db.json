@@ -18,6 +18,33 @@
         "available": false
     },
     {
+        "brand": "Mini",
+        "brandLogo": "mini.png",
+        "model": "Clubman",
+        "modelImage": "mini-clubman.webp",
+        "year": 2020,
+        "price": 23000,
+        "available": true
+    },
+    {
+        "brand": "Mini",
+        "brandLogo": "mini.png",
+        "model": "John Cooper Works",
+        "modelImage": "mini-john-cooper.webp",
+        "year": 2019,
+        "price": 35000,
+        "available": true
+    },
+    {
+        "brand": "Mini",
+        "brandLogo": "mini.png",
+        "model": "Electric",
+        "modelImage": "mini-electric.jpeg",
+        "year": 2022,
+        "price": 32000,
+        "available": false
+    },
+    {
         "brand": "Audi",
         "brandLogo": "audi.png",
         "model": "A4",
@@ -25,6 +52,42 @@
         "year": 2015,
         "price": 15200,
         "available": true
+    },
+    {
+        "brand": "Audi",
+        "brandLogo": "audi.png",
+        "model": "Q5",
+        "modelImage": "audi-q5.png",
+        "year": 2018,
+        "price": 28000,
+        "available": true
+    },
+    {
+        "brand": "Audi",
+        "brandLogo": "audi.png",
+        "model": "A6",
+        "modelImage": "audi-a6.webp",
+        "year": 2020,
+        "price": 35000,
+        "available": false
+    },
+    {
+        "brand": "Audi",
+        "brandLogo": "audi.png",
+        "model": "Q7",
+        "modelImage": "audi-q7.webp",
+        "year": 2019,
+        "price": 45000,
+        "available": true
+    },
+    {
+        "brand": "Audi",
+        "brandLogo": "audi.png",
+        "model": "TT",
+        "modelImage": "audi-tt.webp",
+        "year": 2017,
+        "price": 32000,
+        "available": false
     },
     {
         "brand": "BMW",
@@ -36,6 +99,42 @@
         "available": true
     },
     {
+        "brand": "BMW",
+        "brandLogo": "bmw.png",
+        "model": "Series 3",
+        "modelImage": "bmw-serie-3.jpg",
+        "year": 2020,
+        "price": 42000,
+        "available": true
+    },
+    {
+        "brand": "BMW",
+        "brandLogo": "bmw.png",
+        "model": "X5",
+        "modelImage": "bmw-x5.jpg",
+        "year": 2018,
+        "price": 50000,
+        "available": false
+    },
+    {
+        "brand": "BMW",
+        "brandLogo": "bmw.png",
+        "model": "Z4",
+        "modelImage": "bmw-z-4.jpg",
+        "year": 2021,
+        "price": 60000,
+        "available": true
+    },
+    {
+        "brand": "BMW",
+        "brandLogo": "bmw.png",
+        "model": "Series 5",
+        "modelImage": "bmw-serie-5.jpeg",
+        "year": 2017,
+        "price": 28000,
+        "available": false
+    },
+    {
         "brand": "Mercedes",
         "brandLogo": "mercedes.png",
         "model": "C-Class",
@@ -45,12 +144,84 @@
         "available": false
     },
     {
+        "brand": "Mercedes",
+        "brandLogo": "mercedes.png",
+        "model": "E-Class",
+        "modelImage": "mercedes-e.avif",
+        "year": 2019,
+        "price": 52000,
+        "available": true
+    },
+    {
+        "brand": "Mercedes",
+        "brandLogo": "mercedes.png",
+        "model": "GLC",
+        "modelImage": "mercedes-glc.avif",
+        "year": 2021,
+        "price": 61000,
+        "available": false
+    },
+    {
+        "brand": "Mercedes",
+        "brandLogo": "mercedes.png",
+        "model": "A-Class",
+        "modelImage": "mercedes-a.jpg",
+        "year": 2018,
+        "price": 28000,
+        "available": true
+    },
+    {
+        "brand": "Mercedes",
+        "brandLogo": "mercedes.png",
+        "model": "S-Class",
+        "modelImage": "mercedes-s.webp",
+        "year": 2022,
+        "price": 95000,
+        "available": true
+    },
+    {
         "brand": "Volvo",
         "brandLogo": "volvo.png",
         "model": "XC60",
         "modelImage": "volvo-xc60.webp",
         "year": 2017,
         "price": 27500,
+        "available": true
+    },
+    {
+        "brand": "Volvo",
+        "brandLogo": "volvo.png",
+        "model": "S90",
+        "modelImage": "volvo-s90.avif",
+        "year": 2019,
+        "price": 45000,
+        "available": true
+    },
+    {
+        "brand": "Volvo",
+        "brandLogo": "volvo.png",
+        "model": "XC90",
+        "modelImage": "volvo-xc90.avif",
+        "year": 2021,
+        "price": 60000,
+        "available": false
+    },
+    {
+        "brand": "Volvo",
+        "brandLogo": "volvo.png",
+        "model": "V60",
+        "modelImage": "volvo-v60.avif",
+        "year": 2020,
+        "price": 40000,
+        "available": true
+    },
+    {
+        "brand": "Volvo",
+        "brandLogo": "volvo.png",
+        "model": "XC40",
+        "modelImage": "volvo-xc40.jpg",
+        "year": 2022,
+        "price": 48000,
         "available": true
     },
     {
@@ -63,12 +234,84 @@
         "available": false
     },
     {
+        "brand": "Suzuki",
+        "brandLogo": "suzuki.png",
+        "model": "Vitara",
+        "modelImage": "suzuki-vitara.jpg",
+        "year": 2019,
+        "price": 18500,
+        "available": true
+    },
+    {
+        "brand": "Suzuki",
+        "brandLogo": "suzuki.png",
+        "model": "Jimny",
+        "modelImage": "suzuki-jimny.jpg",
+        "year": 2021,
+        "price": 25000,
+        "available": false
+    },
+    {
+        "brand": "Suzuki",
+        "brandLogo": "suzuki.png",
+        "model": "S-Cross",
+        "modelImage": "suzuki-s-cross.jpg",
+        "year": 2020,
+        "price": 21000,
+        "available": true
+    },
+    {
+        "brand": "Suzuki",
+        "brandLogo": "suzuki.png",
+        "model": "Baleno",
+        "modelImage": "suzuki-baleno.jpg",
+        "year": 2018,
+        "price": 12000,
+        "available": true
+    },
+    {
         "brand": "Lancia",
         "brandLogo": "lancia.png",
         "model": "Ypsilon",
         "modelImage": "lancia-y.webp",
         "year": 2015,
         "price": 7500,
+        "available": true
+    },
+    {
+        "brand": "Lancia",
+        "brandLogo": "lancia.png",
+        "model": "Delta",
+        "modelImage": "lancia-delta.webp",
+        "year": 2012,
+        "price": 8500,
+        "available": false
+    },
+    {
+        "brand": "Lancia",
+        "brandLogo": "lancia.png",
+        "model": "Thema",
+        "modelImage": "lancia-thema.jpg",
+        "year": 2014,
+        "price": 12500,
+        "available": true
+    },
+    {
+        "brand": "Lancia",
+        "brandLogo": "lancia.png",
+        "model": "Fulvia",
+        "modelImage": "lancia-fulvia.jpg",
+        "year": 1972,
+        "price": 28000,
+        "available": false
+    },
+    {
+        "brand": "Lancia",
+        "brandLogo": "lancia.png",
+        "model": "Stratos",
+        "modelImage": "lancia-stratos.jpg",
+        "year": 1974,
+        "price": 600000,
         "available": true
     },
     {
@@ -81,6 +324,42 @@
         "available": true
     },
     {
+        "brand": "Renault",
+        "brandLogo": "renault.png",
+        "model": "Megane",
+        "modelImage": "renault-megane.webp",
+        "year": 2017,
+        "price": 14500,
+        "available": true
+    },
+    {
+        "brand": "Renault",
+        "brandLogo": "renault.png",
+        "model": "Kadjar",
+        "modelImage": "renault-kadjar.jpg",
+        "year": 2019,
+        "price": 19500,
+        "available": false
+    },
+    {
+        "brand": "Renault",
+        "brandLogo": "renault.png",
+        "model": "Twingo",
+        "modelImage": "renault_twingo.jpeg",
+        "year": 2016,
+        "price": 7000,
+        "available": true
+    },
+    {
+        "brand": "Renault",
+        "brandLogo": "renault.png",
+        "model": "Zoe",
+        "modelImage": "renault-zoe.png",
+        "year": 2021,
+        "price": 23000,
+        "available": true
+    },
+    {
         "brand": "Fiat",
         "brandLogo": "fiat.png",
         "model": "Panda",
@@ -90,6 +369,42 @@
         "available": false
     },
     {
+        "brand": "Fiat",
+        "brandLogo": "fiat.png",
+        "model": "500",
+        "modelImage": "fiat-500.avif",
+        "year": 2018,
+        "price": 10500,
+        "available": true
+    },
+    {
+        "brand": "Fiat",
+        "brandLogo": "fiat.png",
+        "model": "Tipo",
+        "modelImage": "fiat-tipo.jpg",
+        "year": 2020,
+        "price": 14500,
+        "available": true
+    },
+    {
+        "brand": "Fiat",
+        "brandLogo": "fiat.png",
+        "model": "500X",
+        "modelImage": "fiat-500x.jpg",
+        "year": 2019,
+        "price": 17500,
+        "available": false
+    },
+    {
+        "brand": "Fiat",
+        "brandLogo": "fiat.png",
+        "model": "Ducato",
+        "modelImage": "fiat-ducato.jpg",
+        "year": 2017,
+        "price": 22000,
+        "available": true
+    },
+    {
         "brand": "Dacia",
         "brandLogo": "dacia.png",
         "model": "Duster",
@@ -97,5 +412,41 @@
         "year": 2019,
         "price": 13200,
         "available": true
+    },
+    {
+        "brand": "Dacia",
+        "brandLogo": "dacia.png",
+        "model": "Sandero",
+        "modelImage": "dacia-sandero.jpg",
+        "year": 2021,
+        "price": 10500,
+        "available": true
+    },
+    {
+        "brand": "Dacia",
+        "brandLogo": "dacia.png",
+        "model": "Logan",
+        "modelImage": "dacia-logan.jpg",
+        "year": 2020,
+        "price": 9500,
+        "available": false
+    },
+    {
+        "brand": "Dacia",
+        "brandLogo": "dacia.png",
+        "model": "Spring",
+        "modelImage": "dacia-spring.jpg",
+        "year": 2022,
+        "price": 16500,
+        "available": true
+    },
+    {
+        "brand": "Dacia",
+        "brandLogo": "dacia.png",
+        "model": "Lodgy",
+        "modelImage": "dacia-lodgy.jpg",
+        "year": 2018,
+        "price": 11200,
+        "available": false
     }
 ]

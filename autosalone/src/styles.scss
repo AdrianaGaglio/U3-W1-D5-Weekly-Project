@@ -66,12 +66,7 @@ $custom-heights: (
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // header
-.app-header {
-  @extend .container-fluid;
-  @extend .p-3;
-}
-
-// footer
+.app-header,
 .app-footer {
   @extend .container-fluid;
   @extend .p-3;
@@ -79,12 +74,7 @@ $custom-heights: (
 
 // hero
 .app-hero,
-.app-brand-intro {
-  @extend .container-fluid;
-  @extend .p-3;
-}
-
-// icons {
+.app-brand-intro,
 .app-iconsbar {
   @extend .container-fluid;
   @extend .p-3;

@@ -13,6 +13,9 @@ import { FeaturedComponent } from './components/featured/featured.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { BrandIntroComponent } from './components/brand-intro/brand-intro.component';
 import { BrandCarsComponent } from './components/brand-intro/brand-cars/brand-cars.component';
+import { SingleCarComponent } from './pages/single-car/single-car.component';
+import { CarIntroComponent } from './components/car-intro/car-intro.component';
+import { RelatedCarsComponent } from './components/car-intro/related-cars/related-cars.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +30,9 @@ import { BrandCarsComponent } from './components/brand-intro/brand-cars/brand-ca
     MenuComponent,
     BrandIntroComponent,
     BrandCarsComponent,
+    SingleCarComponent,
+    CarIntroComponent,
+    RelatedCarsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

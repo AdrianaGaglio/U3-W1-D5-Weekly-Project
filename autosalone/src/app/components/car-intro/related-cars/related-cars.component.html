@@ -1,5 +1,6 @@
-<div class="row row-cols-5 p-3 g-3">
-  <div *ngFor="let car of cars" class="col text-center">
+<h4 class="text-center">Altre auto {{ carBrand }}</h4>
+<div class="row">
+  <div *ngFor="let car of relatedCars" class="col text-center">
     <div class="card shadow-sm px-1 py-3">
       <div class="card-header bg-secondary bg-opacity-50 border-0">
         <h5 class="card-title mb-0">{{ car.brand }} {{ car.model }}</h5>
