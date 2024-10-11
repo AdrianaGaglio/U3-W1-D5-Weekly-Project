@@ -83,7 +83,6 @@ $custom-heights: (
 // featured cars
 .app-featured {
   @extend .container;
-  @extend .p-5;
 }
 
 .not-available {

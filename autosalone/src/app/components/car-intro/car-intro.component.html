@@ -1,9 +1,9 @@
 <div class="container">
-  <div *ngIf="car" class="d-flex py-5">
+  <div *ngIf="car" class="row flex-column flex-md-row py-5">
     <div class="col p-3">
       <img
         src="images/{{ car.modelImage }}"
-        class="w-100 h-100 mb-3 rounded-4"
+        class="w-100 h-100 mb-3 rounded-4 object-fit-contain"
         alt="logo"
       />
     </div>

@@ -1,7 +1,7 @@
 <h4 class="text-center">Altre auto {{ carBrand }}</h4>
-<div class="row">
-  <div *ngFor="let car of relatedCars" class="col text-center">
-    <div class="card shadow-sm px-1 py-3">
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-5 p-5 g-3">
+  <div *ngFor="let car of relatedCars" class="col text-center mb-3 mb-xl-0">
+    <div class="card shadow-sm px-1 py-3 position-relative">
       <div class="card-header bg-secondary bg-opacity-50 border-0">
         <h5 class="card-title mb-0">{{ car.brand }} {{ car.model }}</h5>
       </div>
@@ -12,18 +12,10 @@
       />
       <div class="card-body p-0">
         <ul class="nav mb-3 justify-content-center">
-          <li class="badge bg-secondary mx-1">Anno {{ car.year }}</li>
-          <li class="badge bg-secondary mx-1">
+          <li class="badge bg-secondary mx-1 my-1">Anno {{ car.year }}</li>
+          <li class="badge bg-secondary mx-1 my-1">
             Prezzo {{ car.price | currency : "EUR" }}
           </li>
-          <li
-            class="badge bg-secondary mx-1"
-            [ngClass]="{
-              'bg-success': car.available,
-              'bg-danger': !car.available
-            }"
-            [innerHTML]="car.available ? 'Pronta consegna' : 'Non disponibile'"
-          ></li>
         </ul>
         <button
           [routerLink]="['/car', car.model.toLowerCase()]"
@@ -32,6 +24,14 @@
           Dettagli auto
         </button>
       </div>
+      <span
+        class="position-absolute top-0 start-50 translate-middle badge bg-secondary mx-1"
+        [ngClass]="{
+          'bg-success': car.available,
+          'bg-danger': !car.available
+        }"
+        [innerHTML]="car.available ? 'Pronta consegna' : 'Non disponibile'"
+      ></span>
     </div>
   </div>
 </div>

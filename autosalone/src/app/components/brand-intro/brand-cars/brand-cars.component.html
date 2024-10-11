@@ -1,28 +1,21 @@
-<div class="row row-cols-5 p-3 g-3">
-  <div *ngFor="let car of cars" class="col text-center">
-    <div class="card shadow-sm px-1 py-3">
+<div class="row row-cols-sm-3 row-cols-xl-5 p-5 g-3 gap-md-0">
+  <div *ngFor="let car of cars" class="col text-center mb-3 mb-xl-0">
+    <div class="card shadow-sm px-1 pt-4 pb-3 position-relative">
       <div class="card-header bg-secondary bg-opacity-50 border-0">
         <h5 class="card-title mb-0">{{ car.brand }} {{ car.model }}</h5>
       </div>
       <img
+        [routerLink]="['/car', car.model.toLowerCase()]"
         src="images/{{ car.modelImage }}"
-        class="w-100 h-fixed-250 object-fit-contain mx-auto my-3"
-        alt=""
+        class="w-100 h-fixed-250 object-fit-contain mx-auto my-3 car"
+        alt="{{ car.brand }} {{ car.model }}"
       />
       <div class="card-body p-0">
         <ul class="nav mb-3 justify-content-center">
-          <li class="badge bg-secondary mx-1">Anno {{ car.year }}</li>
-          <li class="badge bg-secondary mx-1">
+          <li class="badge bg-secondary mx-1 my-1">Anno {{ car.year }}</li>
+          <li class="badge bg-secondary mx-1 my-1">
             Prezzo {{ car.price | currency : "EUR" }}
           </li>
-          <li
-            class="badge bg-secondary mx-1"
-            [ngClass]="{
-              'bg-success': car.available,
-              'bg-danger': !car.available
-            }"
-            [innerHTML]="car.available ? 'Pronta consegna' : 'Non disponibile'"
-          ></li>
         </ul>
         <button
           [routerLink]="['/car', car.model.toLowerCase()]"
@@ -31,6 +24,14 @@
           Dettagli auto
         </button>
       </div>
+      <span
+        class="position-absolute top-0 start-50 translate-middle badge bg-secondary mx-1"
+        [ngClass]="{
+          'bg-success': car.available,
+          'bg-danger': !car.available
+        }"
+        [innerHTML]="car.available ? 'Pronta consegna' : 'Non disponibile'"
+      ></span>
     </div>
   </div>
 </div>
